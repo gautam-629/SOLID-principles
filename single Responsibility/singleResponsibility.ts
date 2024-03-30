@@ -1,20 +1,20 @@
-// A class should have one reason to change
+// // A class should have only one reason to change, meaning it should have only one responsibility or job.
 
-import { Invoice } from "./Invoice";
-import { Product,Order } from "./Order";
-import { PaymentProcessor } from "./PaymentProcessor";
-import { PricingCalculator } from "./PricingCalculator";
+// import { Invoice } from "./Invoice";
+// import { Product,Order } from "./Order";
+// import { PaymentProcessor } from "./PaymentProcessor";
+// import { PricingCalculator } from "./PricingCalculator";
 
-const product=new Product('1','Laptop',500);
-const product2= new Product('2',"Iphone",1000);
+// const product=new Product('1','Laptop',500);
+// const product2= new Product('2',"Iphone",1000);
 
-const order=new Order()
-order.addProduct(product)
-order.addProduct(product2)
-const pricingCalculator= new PricingCalculator();
-const total=pricingCalculator.calculatingPricing(order.getProducts());
-const invoice= new Invoice();
-invoice.generateInvoice(order.getProducts(),total)
+// const order=new Order()
+// order.addProduct(product)
+// order.addProduct(product2)
+// const pricingCalculator= new PricingCalculator();
+// const total=pricingCalculator.calculatingPricing(order.getProducts());
+// const invoice= new Invoice();
+// invoice.generateInvoice(order.getProducts(),total)
 
-const paymentProcessor=new PaymentProcessor()
-paymentProcessor.processPayment(order)
+// const paymentProcessor=new PaymentProcessor()
+// paymentProcessor.processPayment(order)
